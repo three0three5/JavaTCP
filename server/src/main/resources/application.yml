@@ -1,0 +1,11 @@
+server:
+  port: 9876
+  pool:
+    size: 4
+  attempts: 3
+  read_timeout: 1000000000
+  write_delay: 3000
+database:
+  url: jdbc:postgresql://localhost:5432/vectorizer
+  username: ${POSTGRES_USER}
+  password: ${POSTGRES_PASSWORD}
